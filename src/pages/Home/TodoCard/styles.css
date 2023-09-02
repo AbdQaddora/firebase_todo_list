@@ -1,0 +1,35 @@
+.todo_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.todo_title {
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+    margin: unset !important;
+}
+
+.todo_card_actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.todo_card.high {
+    border: 1px solid red;
+}
+
+.todo_card.medium {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.todo_card.low {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
