@@ -42,8 +42,13 @@ const TodoCard = ({ todo, onChange }) => {
 
     const handelDeleteTodo = () => {
         deleteDoc(docRef)
-            .then(() => message.success("Todo deleted successfully"))
-        onChange();
+            .then(() => {
+                message.success("Todo deleted successfully")
+                onChange();
+            }).catch(() => {
+                message.error("Something went wrong")
+            })
+
     }
 
     return (
